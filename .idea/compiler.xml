@@ -10,11 +10,15 @@
         <module name="Spring-app-config-server" />
         <module name="Order-Service" />
         <module name="Product-Service" />
+        <module name="Payment-Service" />
         <module name="Service-Registry" />
+        <module name="CloudGateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CloudGateway" target="17" />
       <module name="Order-Service" target="17" />
+      <module name="Payment-Service" target="17" />
       <module name="Product-Service" target="17" />
       <module name="Service-Registry" target="17" />
       <module name="Spring-app-config-server" target="17" />
@@ -22,7 +26,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CloudGateway" options="-parameters" />
       <module name="Order-Service" options="-parameters" />
+      <module name="Payment-Service" options="-parameters" />
       <module name="Product-Service" options="-parameters" />
       <module name="Service-Registry" options="-parameters" />
       <module name="Spring-app-config-server" options="-parameters" />

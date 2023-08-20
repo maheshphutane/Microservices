@@ -25,7 +25,7 @@ public class CustomErrorDecoder implements ErrorDecoder {
                     exceptionResponse.getErrorCode(),
                     response.status());
         } catch (IOException e) {
-            throw new OrderServiceException("Internal Server Error","Kidhar to problem ho gaya he bhai",500);
+            throw new OrderServiceException("Kidhar to problem ho gaya he bhai","Internal Server Error",500);
         }
 
     }

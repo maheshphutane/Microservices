@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/Service-Registry/pom.xml" />
         <option value="$PROJECT_DIR$/Order-Service/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-app-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/Payment-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/CloudGateway/pom.xml" />
       </list>
     </option>
   </component>

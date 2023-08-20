@@ -27,8 +27,8 @@ public class OrderController {
     }
 
     @GetMapping()
-    public ResponseEntity<Order> getOrderById(@RequestParam long id){
-        Order order = orderService.getOrderById(id);
+    public ResponseEntity<OrderResponseDTO> getOrderById(@RequestParam long id){
+        OrderResponseDTO order = orderService.getOrderById(id);
         if(order==null) throw new OrderServiceException("Order with id: "+id+" is Not Found","ORDER_NOT_FOUND",404);
         return new ResponseEntity<>(order,HttpStatus.OK);
     }
